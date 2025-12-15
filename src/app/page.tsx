@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const items = PlaceHolderImages.map((img, i) => ({
   image: img.imageUrl,
-  link: 'https://google.com/',
+  link: img.imageUrl,
   title: '',
   description: ''
 }));

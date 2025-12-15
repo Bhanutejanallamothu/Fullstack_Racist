@@ -899,7 +899,7 @@ class InfiniteGridMenu {
   }
 
   private animate(deltaTime: number): void {
-    if (!this.gl || !this.discInstances) return;
+    if (!this.gl || !this.discInstances || !this.discInstances.buffer) return;
     const gl = this.gl;
     this.control.update(deltaTime, this.TARGET_FRAME_DURATION);
 
@@ -1117,11 +1117,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
 
   const handleButtonClick = () => {
     if (!activeItem?.link) return;
-    if (activeItem.link.startsWith('http')) {
-      window.open(activeItem.link, '_blank');
-    } else {
-      console.log('Internal route:', activeItem.link);
-    }
+    window.open(activeItem.link, '_blank');
   };
 
   return (
