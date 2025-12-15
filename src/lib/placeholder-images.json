@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "item-11",
+      "description": "Item 11 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-46.jpg",
+      "imageHint": "user provided"
+    },
+    {
       "id": "item-1",
       "description": "Item 1 image",
       "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-02.jpg",
@@ -58,12 +64,6 @@
       "id": "item-10",
       "description": "Item 10 image",
       "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-01.jpg",
-      "imageHint": "user provided"
-    },
-    {
-      "id": "item-11",
-      "description": "Item 11 image",
-      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-46.jpg",
       "imageHint": "user provided"
     },
     {
