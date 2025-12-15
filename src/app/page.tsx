@@ -4,8 +4,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const items = PlaceHolderImages.map((img, i) => ({
   image: img.imageUrl,
   link: 'https://google.com/',
-  title: `Item ${i + 1}`,
-  description: 'This is pretty cool, right?'
+  title: '',
+  description: ''
 }));
 
 export default function Home() {

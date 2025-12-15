@@ -1134,65 +1134,6 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
 
       {activeItem && (
         <>
-          <h2
-            className={`
-          select-none
-          absolute
-          font-black
-          font-headline
-          text-5xl
-          md:text-7xl
-          left-1/2
-          md:left-[1.6em]
-          top-20
-          md:top-1/2
-          transform
-          -translate-x-1/2
-          md:translate-x-[20%]
-          -translate-y-1/2
-          transition-all
-          ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-          ${
-            isMoving
-              ? 'opacity-0 pointer-events-none duration-[100ms]'
-              : 'opacity-100 pointer-events-auto duration-[500ms]'
-          }
-        `}
-          >
-            {activeItem.title}
-          </h2>
-
-          <p
-            className={`
-          select-none
-          absolute
-          max-w-[20ch]
-          md:max-w-[10ch]
-          text-lg
-          md:text-2xl
-          text-center
-          md:text-right
-          bottom-40
-          md:bottom-auto
-          md:top-1/2
-          right-1/2
-          md:right-[1%]
-          transform
-          translate-x-1/2
-          md:translate-x-0
-          md:-translate-y-1/2
-          transition-all
-          ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-          ${
-            isMoving
-              ? 'opacity-0 pointer-events-none duration-[100ms] md:translate-x-[-60%]'
-              : 'opacity-100 pointer-events-auto duration-[500ms] md:translate-x-[-90%]'
-          }
-        `}
-          >
-            {activeItem.description}
-          </p>
-
           <div
             onClick={handleButtonClick}
             className={`
