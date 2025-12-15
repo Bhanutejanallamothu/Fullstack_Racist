@@ -14,7 +14,7 @@ const items = PlaceHolderImages.map((img, i) => ({
 
 export default function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
 
   const toggleMute = () => {
     if (audioRef.current) {
@@ -35,7 +35,6 @@ export default function Home() {
         ref={audioRef}
         autoPlay
         loop
-        muted
         onPlay={() => setIsMuted(false)}
         onPause={() => {
             if(audioRef.current && !audioRef.current.muted) {
