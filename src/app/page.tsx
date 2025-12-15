@@ -4,6 +4,12 @@ import InfiniteMenu from '@/components/InfiniteMenu';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Volume2, VolumeX } from 'lucide-react';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const items = PlaceHolderImages.map((img, i) => ({
   image: img.imageUrl,
@@ -21,15 +27,15 @@ export default function Home() {
     if (audio) {
       // Attempt to play, browsers might block this if not muted.
       audio.play().catch((error) => {
-        console.warn("Audio autoplay was prevented:", error);
+        console.warn('Audio autoplay was prevented:', error);
         // If autoplay is blocked, we should reflect the muted state.
         if (!audio.paused) {
           audio.muted = true;
           setIsMuted(true);
-        } else if(audio.muted) {
-           setIsMuted(true);
+        } else if (audio.muted) {
+          setIsMuted(true);
         } else {
-           setIsMuted(false)
+          setIsMuted(false);
         }
       });
     }
@@ -43,7 +49,7 @@ export default function Home() {
       setIsMuted(newMutedState);
       // If we are unmuting and it's paused, play it.
       if (!newMutedState && audio.paused) {
-        audio.play().catch((e) => console.error("Audio play failed:", e));
+        audio.play().catch((e) => console.error('Audio play failed:', e));
       }
     }
   };
@@ -60,10 +66,10 @@ export default function Home() {
         muted={false}
         onPlay={() => setIsMuted(audioRef.current?.muted ?? false)}
         onPause={() => {
-            if(audioRef.current && !audioRef.current.muted) {
-                // This case can happen if the browser pauses audio when the tab is hidden
-                // We don't want to change the icon in this case
-            }
+          if (audioRef.current && !audioRef.current.muted) {
+            // This case can happen if the browser pauses audio when the tab is hidden
+            // We don't want to change the icon in this case
+          }
         }}
       >
         <source
@@ -71,15 +77,24 @@ export default function Home() {
           type="audio/mpeg"
         />
       </audio>
-      <Button
-        onClick={toggleMute}
-        variant="ghost"
-        size="icon"
-        className="absolute bottom-4 right-4 z-20 bg-primary/50 hover:bg-primary text-primary-foreground"
-      >
-        {isMuted ? <VolumeX /> : <Volume2 />}
-        <span className="sr-only">Toggle sound</span>
-      </Button>
+      <TooltipProvider>
+        <Tooltip open={isMuted}>
+          <TooltipTrigger asChild>
+            <Button
+              onClick={toggleMute}
+              variant="ghost"
+              size="icon"
+              className="absolute bottom-4 right-4 z-20 bg-primary/50 hover:bg-primary text-primary-foreground"
+            >
+              {isMuted ? <VolumeX /> : <Volume2 />}
+              <span className="sr-only">Toggle sound</span>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Click to unmute</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </main>
   );
 }
