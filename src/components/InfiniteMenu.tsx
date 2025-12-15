@@ -900,6 +900,7 @@ class InfiniteGridMenu {
 
   private animate(deltaTime: number): void {
     if (!this.gl || !this.discInstances) return;
+    const gl = this.gl;
     this.control.update(deltaTime, this.TARGET_FRAME_DURATION);
 
     const positions = this.instancePositions.map(p => vec3.transformQuat(vec3.create(), p, this.control.orientation));
