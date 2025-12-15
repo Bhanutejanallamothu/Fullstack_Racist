@@ -14,7 +14,7 @@ export default function Home() {
       <div className="w-full h-full relative">
         <InfiniteMenu items={items}/>
       </div>
-      <audio autoPlay>
+      <audio autoPlay loop>
         <source src="https://ik.imagekit.io/bhanuteja110/New%20folder/Oggy%20and%20the%20Cockroaches%20-%20ALL%20OPENINGS%20_%201998%20-%202018%20low.mp3" type="audio/mpeg" />
       </audio>
     </main>
