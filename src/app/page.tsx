@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import InfiniteMenu from '@/components/InfiniteMenu';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
@@ -16,12 +16,34 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isMuted, setIsMuted] = useState(false);
 
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      // Attempt to play, browsers might block this if not muted.
+      audio.play().catch((error) => {
+        console.warn("Audio autoplay was prevented:", error);
+        // If autoplay is blocked, we should reflect the muted state.
+        if (!audio.paused) {
+          audio.muted = true;
+          setIsMuted(true);
+        } else if(audio.muted) {
+           setIsMuted(true);
+        } else {
+           setIsMuted(false)
+        }
+      });
+    }
+  }, []);
+
   const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !audioRef.current.muted;
-      setIsMuted(audioRef.current.muted);
-      if (!audioRef.current.muted && audioRef.current.paused) {
-        audioRef.current.play().catch((e) => console.error("Audio play failed:", e));
+    const audio = audioRef.current;
+    if (audio) {
+      const newMutedState = !audio.muted;
+      audio.muted = newMutedState;
+      setIsMuted(newMutedState);
+      // If we are unmuting and it's paused, play it.
+      if (!newMutedState && audio.paused) {
+        audio.play().catch((e) => console.error("Audio play failed:", e));
       }
     }
   };
@@ -35,10 +57,12 @@ export default function Home() {
         ref={audioRef}
         autoPlay
         loop
-        onPlay={() => setIsMuted(false)}
+        muted={false}
+        onPlay={() => setIsMuted(audioRef.current?.muted ?? false)}
         onPause={() => {
             if(audioRef.current && !audioRef.current.muted) {
-                setIsMuted(true)
+                // This case can happen if the browser pauses audio when the tab is hidden
+                // We don't want to change the icon in this case
             }
         }}
       >
