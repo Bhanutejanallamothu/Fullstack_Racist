@@ -3,26 +3,158 @@
     {
       "id": "item-1",
       "description": "Item 1 image",
-      "imageUrl": "https://images.unsplash.com/photo-1581215524789-83361d941827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JheXNjYWxlJTIwcGF0dGVybnxlbnwwfHx8fDE3NjU4MTQ4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "grayscale pattern"
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-02.jpg",
+      "imageHint": "user provided"
     },
     {
       "id": "item-2",
       "description": "Item 2 image",
-      "imageUrl": "https://images.unsplash.com/photo-1710595987394-3e09243d383f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmF5c2NhbGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2NTgxNDg1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "grayscale texture"
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-40.jpg",
+      "imageHint": "user provided"
     },
     {
       "id": "item-3",
       "description": "Item 3 image",
-      "imageUrl": "https://images.unsplash.com/photo-1616254879476-41ff02b35d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmF5c2NhbGUlMjBhYnN0cmFjdHxlbnwwfHx8fDE3NjU4MTQ4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "grayscale abstract"
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-35.jpg",
+      "imageHint": "user provided"
     },
     {
       "id": "item-4",
       "description": "Item 4 image",
-      "imageUrl": "https://images.unsplash.com/photo-1581215524789-83361d941827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmF5c2NhbGUlMjBsaW5lc3xlbnwwfHx8fDE3NjU4MTQ4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "grayscale lines"
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-36.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-5",
+      "description": "Item 5 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-54.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-6",
+      "description": "Item 6 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-55.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-7",
+      "description": "Item 7 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-49.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-8",
+      "description": "Item 8 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-59.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-9",
+      "description": "Item 9 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-00.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-10",
+      "description": "Item 10 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-01.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-11",
+      "description": "Item 11 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-46.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-12",
+      "description": "Item 12 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-34.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-13",
+      "description": "Item 13 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-53.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-14",
+      "description": "Item 14 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-41.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-15",
+      "description": "Item 15 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-42-03.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-16",
+      "description": "Item 16 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-51.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-17",
+      "description": "Item 17 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-37.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-18",
+      "description": "Item 18 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-41%20(2).jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-19",
+      "description": "Item 19 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-50.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-20",
+      "description": "Item 20 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-57.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-21",
+      "description": "Item 21 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-45.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-22",
+      "description": "Item 22 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-58.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-23",
+      "description": "Item 23 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-52.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-24",
+      "description": "Item 24 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-48.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-25",
+      "description": "Item 25 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-39.jpg",
+      "imageHint": "user provided"
+    },
+    {
+      "id": "item-26",
+      "description": "Item 26 image",
+      "imageUrl": "https://ik.imagekit.io/bhanuteja110/New%20folder/photo_2025-12-15_20-41-44.jpg",
+      "imageHint": "user provided"
     }
   ]
 }
